@@ -4,18 +4,18 @@ A simple command-line tool for recording HTTP requests.
 
 ## Installation
 
-To install servant, ensure you have a recent version of Go installed and run
+To install dumbwaiter, ensure you have a recent version of Go installed and run
 the command:
 
 ```bash
 go get github.com/brett-lempereur/dumbwaiter
 ```
 
-This will install the `servant` tool into your `GOPATH`.
+This will install the `dumbwaiter` tool into your `GOPATH`.
 
 ## Usage
 
-To run servant, ensure that `$GOPATH/bin` is in your path and run:
+To run it, ensure that `$GOPATH/bin` is in your path and run:
 
 ```bash
 dumbwaiter -v --address=:8080 --status=201 output.json
