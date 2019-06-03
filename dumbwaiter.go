@@ -2,6 +2,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"gopkg.in/alecthomas/kingpin.v2"
 	"net/http"
@@ -43,7 +44,7 @@ func main() {
 				_, _ = fmt.Fprintf(os.Stderr, "error: %s", err)
 				os.Exit(1)
 			}
-			err = server.Shutdown(nil)
+			err = server.Shutdown(context.Background())
 			if err != nil {
 				_, _ = fmt.Fprintf(os.Stderr, "error: %s", err)
 				os.Exit(2)
